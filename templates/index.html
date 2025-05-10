@@ -1,0 +1,69 @@
+<html lang="es" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='asset/css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>LocalBook</title>
+    <script src="{{ url_for('static', filename='code.jquery.com_jquery-3.7.0.js') }}"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h3>Local<b>Book</b></h3>
+        </div>
+        <nav class="links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('packages') }}">Packages</a>
+            <a href="{{ url_for('inquiry') }}">Inquiry</a>
+            <a href="{{ url_for('login') }}" id="login">Sign-Up/Login</a>
+        </nav>
+    </header>
+    <div class="main">
+
+        <div class="content">
+            <div class="container">
+                <div class="info">
+                    <h1>Welcome</h1>
+                    <br>
+                    <p>We are here to guide you in your upcoming adventure, providing you useful and most relevant information regarding your destination and planning trip for the same. </p>
+                    <br><br><br>
+                  
+                    <div class="dropdown">
+                        <label for="state-select">Where you at?</label>
+                        <select id="state-select" onchange="goToState(this)">
+                            <option value="">Get Info \/</option>
+                            
+                            <ul>
+                                {% for key, state in states.items() %}
+                                  <li>
+                                    <option value="{{ url_for('show_state', state_key=key) }}">{{ state.name }}</option>
+                                  </li>
+                                {% endfor %}
+                            </ul>
+                        </select>
+                    </div>                            
+                </div>  
+                <div class="image">
+                    <img src="{{ url_for('static', filename='asset/img/welcome.png') }}" alt="Welcome">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function goToState(select) {
+            const url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

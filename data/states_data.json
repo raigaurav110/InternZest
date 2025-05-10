@@ -1,0 +1,161 @@
+{
+
+    "a": {
+        "name": "",
+        "backgrounds": {
+            "header": "",
+            "discover": "",
+            "fixed": ""
+        },
+        "history_images": [
+            "",
+            ""
+        ],
+        "discover_places": [
+            {"name": "", "image": ""},
+            {"name": "", "image": ""}
+        ],
+        "history_text": [
+
+        ],
+        
+        "discover_text": [
+            
+        ],
+        "more_text": [
+
+        ],
+
+        "state_table": {
+            "heading": ["", "", ""],
+            "rows": [
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""]
+            ]
+        }
+    },
+
+    "uttar-pradesh": {
+        "name": "Uttar Pradesh",
+        "backgrounds": {
+            "header": "images/uttar_pradesh/header.png",
+            "discover": "images/uttar_pradesh/discover.jpg",
+            "fixed": "images/uttar_pradesh/fixed.jpg"
+        },
+        "history_images":{ 
+            "img1":"images/uttar_pradesh/kashi_vishwanath.webp",
+            "img2":"images/uttar_pradesh/agra_fort.webp"
+        },
+        "box_image":{
+            "box_img":"images/uttar_pradesh/lucknow_zoo.jpg"
+        },
+        "discover_images": {
+            "discover_img1": "images/uttar_pradesh/ram_mandir.jpeg",
+            "discover_img2": "images/uttar_pradesh/bada_imambada.jpg",
+            "discover_img3": "images/uttar_pradesh/gomti_riverfront.png",
+            "discover_img4": "images/uttar_pradesh/fatehpur_sikri.jpg"
+        },
+        "history_text": [
+            "Uttar Pradesh was established in 1950 after India had become a republic.",
+            "It is a successor to the United Provinces, established in 1935 by renaming the United Provinces of Agra and Oudh, in turn established in 1902 from the North-Western Provinces and the Oudh Province.",
+            "Uttar Pradesh’s identity is due to its civilization and culture. This is the state where the two greatest incarnations of the century, Maryada Purushottam Ram and Yugpurush Shri Krishna were born.",
+            "The land of such great deeds has given birth to many great men, wise men and ascetics. People consider themselves fortunate to see such a holy state."
+        ],
+        
+        "discover_text": [
+            "Uttar Pradesh is India's most populous state, home to over 241 million people in 2021 and projected to reach around 262 million by 2025, making it the fifth most populous entity globally if it were a separate country.",
+            "It has a high population density, with the majority of its population residing in rural areas (around 77.73% in 2021).",
+            "The literacy rate in 2011 was 67.68%, with a notable gender gap, though recent estimates suggest improvement.",
+            "The sex ratio was approximately 1015 females per 1000 males in 2021, a significant increase from the 2011 figure of 912.",
+            "Hinduism is the predominant religion (around 79.73%), followed by Islam (around 19.26%), highlighting the state's significant demographic weight and diversity."
+        ],
+        "more_text": [
+            "Uttar Pradesh is a land of ancient culture and heritage, home to the Taj Mahal and the holy river Ganaga.",
+            "It offers a unique blend of spiritual, cultural, and historical richness that attracts millions of visitors every year.",
+            "From the ghats of Varanasi to the forests of Dudhwa, the state is a tapestry of diverse experiences."
+        ],
+
+        "state_table": {
+            "heading": ["Cities", "", "Top Destinations"],
+            "rows": [
+                ["Lucknow: The City of Nawabs", "Row 1 Col 2", "Bara/Chhota Imambara, Rumi Darwaza, Dr. Ambedkar Park, Hazratganj/Aminabad"],
+                ["Ayodhya: The Birthplace of Rama", "Row 2 Col 2", "Ram Mandir, Hanumangarhi, Nageshwarnath Temple"],
+                ["Prayagraj: The Sangam City", "Row 3 Col 2", "Sangam, Prayagraj Fort, Hanuman Temple, Chandrashekhar Azad Park"],
+                ["Varanasi: The City of Ghats & Temples", "Row 4 Col 2", "Kashi Vishwanath Temple, Ganga Aarti and Ghats, Sarnath Stupa, Ramnagar Fort"],
+                ["Mathura: The Birthplace of Shri Krishna", "Row 5 Col 2", "Shri Krishna Janmasthan, Prem Mandir, ISKCON Temple, Govardhan Parvat"],
+                ["Agra: Taj Nagari", "Row 6 Col 2", "Taj Mahal, Agra Fort, Fatehpur Sikri"],
+                ["Ghaziabad", "Row 7 Col 2", "Indirapuram Habitat Centre, Drizzling Land, Swarna Jayanti Park"],
+                ["Noida", "Row 8 Col 2", "Worlds of Wonder, Brahmaputra Market, Okhla Bird Sanctuary"],
+                ["Meerut", "Row 9 Col 2", "Shri Baba Augharnath Shiv Mandir, Suraj Kund Park, Travelodesk"],
+                ["Row 10 Col 1", "Row 10 Col 2", "Row 10 Col 3"]
+            ]
+        }
+    },
+
+    "": {
+        "name": "",
+        "backgrounds": {
+            "header": "",
+            "discover": "",
+            "fixed": ""
+        },
+        "history_images": [
+            "",
+            ""
+        ],
+        "discover_places": [
+            {"name": "", "image": ""},
+            {"name": "", "image": ""}
+        ],
+        "history_text": [
+
+        ],
+        
+        "discover_text": [
+            
+        ],
+        "more_text": [
+
+        ],
+
+        "state_table": {
+            "heading": ["", "", ""],
+            "rows": [
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""],
+                ["", "", ""]
+            ]
+        }
+    },
+
+
+    "tamil-nadu": {
+        "name": "Tamil Nadu",
+        "header_bg": "/static/images/tn_header.jpg",
+        "discover_bg": "/static/images/tn_discover.jpg",
+        "fixed_img_bg": "/static/images/tn_fixed.jpg",
+        "history_images": [
+            "/static/images/tn_hist1.jpg",
+            "/static/images/tn_hist2.jpg"
+        ],
+        "discover_places": [
+            {"name": "Chennai", "image": "/static/images/chennai.jpg"},
+            {"name": "Madurai", "image": "/static/images/madurai.jpg"}
+        ]
+    }
+}

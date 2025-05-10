@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='asset/css/inquiry.css') }}">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='asset/css/index.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Inquiry</title>
+    <script  href="{{ url_for('static', filename='/code.jquery.com_jquery-3.7.0.js') }}">
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h3>Local<b>Book</b></h3>
+        </div>
+        <nav class="links">
+            <a href="/index.htm">Home</a>
+            <a href="/package.htm">Packages</a>
+            <a href="/inquiry.htm">Inquiry</a>
+            <a href="login.htm" id="login">Sign-Up/Login</a>
+        </nav>
+    </header>
+    <div class="main">
+
+        <div class="content">
+            <div class="container">
+                <div id="contact">
+                    <form>
+                        <ul>
+                            <li>
+                                <label>Name</label>
+                                <input type="text" data-placeholder="First Name" />
+                            </li>
+                            <li>
+                                <label>City</label>
+                                <input type="text" placeholder="e.g. New Delhi"/>
+                            </li>
+                            <li>
+                                <label>Email</label>
+                                <input type="text" placeholder="e.g. hello@example.com" />
+                            </li>
+                            <li>
+                                <label>Contact</label>
+                                <input type="text" placeholder="e.g. 01234 567890" />
+                            </li>
+                            <li>
+                                <label>Inquiry</label>
+                                <textarea class="inquiry" type="text" placeholder="Enter Your Question Here...">
+                            </li>
+                            <li>
+                                <button>Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

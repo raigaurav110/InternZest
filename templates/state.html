@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- History Section -->
+<div class="about-us" id="history">
+    <div class="text">
+        <h2>History</h2>
+        <p>{{ history_text }}</p>
+    </div>
+    <div class="image-container">
+        <div class="image image1">
+            <img src="{{ url_for('static', filename=img1) }}" alt="Photo 1" loading="lazy">
+        </div>
+        <div class="image image2">
+            <img src="{{ url_for('static', filename=img2) }}" alt="Photo 2" loading="lazy">
+        </div>
+    </div>
+</div>
+
+<!-- Discover Section -->
+<div class="discover">
+    <div class="image"></div>
+    <div class="text">
+        <h2>Demography</h2>
+        <p class="whitetext">{{ discover_text }}</p>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="box-model">
+        <i class="fas fa-times fa-2x close"></i>
+        <div class="arrow">
+            <div class="arrow arrow-right"></div>
+            <div class="arrow arrow-left"></div>
+        </div>
+        <div class="box-image-container">
+            <div class="box-image">
+                <img src="{{ url_for('static', filename=box_img) }}" alt="Photo" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <table>
+            <tr>
+                {% for head in state_table.heading %}
+                    <th>{{ head }}</th>
+                {% endfor %}
+            </tr>
+            {% for row in state_table.rows %}
+            <tr>
+                {% for col in row %}
+                    <td>{{ col }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+
+    <div class="menu-image-container" id="discover">
+        <div class="image active">
+            <img src="{{ url_for('static', filename=discover_img1) }}" alt="Photo" loading="lazy">
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename=discover_img2) }}" alt="Photo" loading="lazy">
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename=discover_img3) }}" alt="Photo" loading="lazy">
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename=discover_img4) }}" alt="Photo" loading="lazy">
+        </div>
+        
+    </div>
+</div>
+
+<!-- Fixed Image Section -->
+<div class="fixed-image">
+    <div class="text">
+        <h2>{{ fixed_image_title }}</h2>
+        <p class="whitetext">{{ fixed_image_desc }}</p>
+    </div>
+</div>
+
+<!-- More Section -->
+<div class="reservation" id="more">
+    <div class="text">
+        <h2>More</h2>
+        <p>{{ more_text }}</p>
+        <div><a class="a-CTA" href="#">View Local Products.</a></div>
+    </div>
+    <div class="image-container">
+        <div class="image image1"><img src="{{ url_for("static", filename=more_img1) }}" alt="More Image 1" loading="lazy"></div>
+        <div class="image image2"><img src="{{ url_for("static", filename=more_img2) }}" alt="More Image 2" loading="lazy"></div>
+    </div>
+</div>
+{% endblock %}
